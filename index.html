@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
- 
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beginner Coding</title>
+<title>Portfolio</title>
  
-https://fonts.gstatic.com
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;swap
+https://fonts.googleapis.com
+<link rel="preconnect" href="https://fontsf="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+rel="stylesheet">
  
-<linkestyle.css
-<linktyle.css
+<link rel="stylesheet" href="css/style.css">
 </head>
  
 <body>
  
-<!-- ヘッダー -->
 <header id="top" class="header">
 <div class="container">
  
-index.html
-<imges/logo.svg
-</a>
- 
-<ul class="header-nav">
+<a hrefav">
 <li class="header-nav__item">#topTOP</a></li>
 <li class="header-nav__item">#aboutABOUT</a></li>
 <li class="header-nav__item">#serviceSERVICE</a></li>
 <li class="header-nav__item">#worksWORKS</a></li>
-<li class="header-nav__item"><a href="#contacta></li>
+<li class="header-nav__item">#contactCONTACT</a></li>
 </ul>
  
 </div>
 </header>
  
-<!-- メインビジュアル -->
 <div class="mv"></div>
  
 <main>
  
-<!-- ABOUT -->
 <section id="about" class="about">
 <div class="full-container">
  
@@ -51,24 +42,26 @@ ABOUT<br>
  
 <div class="about-content">
  
-images/about-img.png
+<img
+src="images/about-img.png"
+alt="プロフィール画像"
+class="about-content__img">
  
-<div class="about-content__text-box">
-<h3>HTML/CSS Web制作</h3>
- 
-<p>
-シンプルで伝わるWeb制作を、丁寧に行います
+<div class="about-content__text丁寧に行います。
 </p>
  
 <p>
-埼玉県在住のWeb制作者です。HTML/CSSを中心に、
-ランディングページやサイト更新を行っています。
-丁寧なコミュニケーションと納期厳守を大切にしています。
+埼玉県在住のWeb制作者です。
+HTML/CSSを中心にランディングページやサイト更新を
+行っています。
+丁寧なコミュニケーションと納期厳守を
+大切にしています。
 </p>
  
 <p>
 そのほかの言語も勉強中です。
 </p>
+ 
 </div>
  
 </div>
@@ -76,8 +69,8 @@ images/about-img.png
 </div>
 </section>
  
-<!-- SERVICE -->
 <section id="service" class="service">
+ 
 <div class="container">
  
 <h2 class="heading">
@@ -88,6 +81,7 @@ SERVICE<br>
 <div class="service-cards">
  
 <div class="service-card">
+ 
 <div class="service-card__img">
 <span class="service-card__title">HTML/CSS</span>
 </div>
@@ -95,9 +89,11 @@ SERVICE<br>
 <div class="service-card__text-box">
 <p>HTML/CSSを中心に簡単なJavaScriptが扱えます。</p>
 </div>
+ 
 </div>
  
 <div class="service-card">
+ 
 <div class="service-card__img">
 <span class="service-card__title">LP制作</span>
 </div>
@@ -105,25 +101,29 @@ SERVICE<br>
 <div class="service-card__text-box">
 <p>LP制作・サイト更新（レスポンシブ対応）</p>
 </div>
+ 
 </div>
  
 <div class="service-card">
+ 
 <div class="service-card__img">
 <span class="service-card__title">準備中</span>
 </div>
  
 <div class="service-card__text-box">
-<p>その他のスキルはただいま習得中です。</p>
+<p>その他のスキルは現在習得中です。</p>
 </div>
+ 
 </div>
  
 </div>
  
 </div>
+ 
 </section>
  
-<!-- WORKS -->
 <section id="works" class="works">
+ 
 <div class="full-container">
  
 <h2 class="heading">
@@ -132,19 +132,22 @@ WORKS<br>
 </h2>
  
 <div class="works-content">
-./images/work-img01.png
-./images/work-img02.png
-./images/work-img03.png
-./images/work-img04.png
-./images/work-img05.png
-./images/work-img06.png
+ 
+images/work-img01.png
+images/work-img02.png
+images/work-img03.png
+images/work-img04.png
+images/work-img05.png
+<imges/work-img06.png
+ 
 </div>
  
 </div>
+ 
 </section>
  
-<!-- CONTACT -->
 <section id="contact" class="contact">
+ 
 <div class="full-container">
  
 <h2 class="heading">
@@ -161,7 +164,7 @@ CONTACT<br>
 <span class="required">必須</span>お名前
 </th>
 <td class="form-table__td">
-<input class="form-table__input" type="text" name="name" placeholder="お名前">
+<input class="form-table__input" type="text" name="name">
 </td>
 </tr>
  
@@ -170,7 +173,7 @@ CONTACT<br>
 <span class="required">必須</span>メールアドレス
 </th>
 <td class="form-table__td">
-<input class="form-table__input" type="email" name="email" placeholder="メールアドレス">
+<input class="form-table__input" type="email" name="email">
 </td>
 </tr>
  
@@ -179,7 +182,7 @@ CONTACT<br>
 <span class="any">任意</span>お問い合わせ件名
 </th>
 <td class="form-table__td">
-<input class="form-table__input" type="text" name="subject" placeholder="お問い合わせ件名">
+<input class="form-table__input" type="text" name="subject">
 </td>
 </tr>
  
@@ -188,25 +191,31 @@ CONTACT<br>
 <span class="required">必須</span>お問い合わせ内容
 </th>
 <td class="form-table__td">
-<textarea class="form-table__input" name="message" cols="30" rows="10"
-placeholder="お問い合わせ内容"></textarea>
+<textarea
+class="form-table__input"
+name="message"
+rows="8"></textarea>
 </td>
 </tr>
  
 </table>
  
-<input type="submit" class="form-submit" value="送信する">
+<input
+type="submit"
+class="form-submit"
+value="送信する">
  
 </form>
  
 </div>
+ 
 </section>
  
 </main>
  
-<!-- フッター -->
 <footer class="footer">
-<p>© 2025 XXXX. All Rights Reserved.</p>
+<p>© 2025 Portfolio. All Rights Reserved.</p>
 </footer>
  
 </body>
+</html>
