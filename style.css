@@ -1,0 +1,267 @@
+/* 共通
+====================================================*/
+* {
+ font-family: 'Noto Sans JP', sans-serif;
+}
+body {
+ background: #fafafa;
+}
+p {
+ line-height: 1.6;
+}
+.full-container {
+ padding: 80px 0;
+ width: 100%;
+ height: 100%;
+}
+.container {
+ margin: 0 auto;
+ padding: 80px 0;
+ width: 1080px;
+ height: 100%;
+}
+.heading {
+ margin-bottom: 64px;
+ text-align: center;
+ font-weight: bold;
+ font-size: 40px;
+}
+.heading > span {
+ position: relative;
+ top: -16px;
+ font-weight: normal;
+ font-size: 14px;
+}
+
+/* ヘッダー
+====================================================*/
+.header {
+ height: 80px;
+ background: #fff;
+}
+.header > .container {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0;
+}
+.header-nav {
+ display: flex;
+}
+.header-nav__item {
+ margin-right: 56px;
+ font-weight: bold;
+}
+.header-nav__item:last-of-type {
+ margin-right: 0;
+}
+
+/* メインビジュアル
+====================================================*/
+.mv {
+ width: 100%;
+ height: calc(100vh - 80px);
+ background: url(../images/main-view.png);
+ background-attachment: fixed;
+ background-position: center;
+ background-size: cover;
+}
+
+/* ABOUTセクション
+====================================================*/
+.about > .full-container {
+ padding: 80px 0 calc(64px + 80px);
+}
+.about-content {
+ display: flex;
+ width: 100%;
+ height: 385px;
+}
+.about-content__img {
+ width: 50%;
+ height: 100%;
+}
+.about-content__text-box {
+ position: relative;
+ top: 64px;
+ padding: 40px;
+ width: 50%;
+ height: 100%;
+ background: #5e7a8f;
+}
+.about-content__text-box > h3, .about-content__text-box > p {
+ color: #fff;
+}
+.about-content__text-box > h3 {
+ font-weight: bold;
+ font-size: 24px;
+}
+.about-content__text-box > p {
+ margin-top: 32px;
+ font-size: 14px;
+}
+
+/* SERVICEセクション
+====================================================*/
+.service-cards {
+ display: flex;
+ justify-content: space-between;
+}
+.service-card {
+ padding: 0 16px;
+ width: calc(100% / 3);
+ border-left: 1px dotted #707070;
+}
+.service-card:last-of-type {
+ border-right: 1px dotted #707070;
+}
+.service-card__img {
+ position: relative;
+ width: 100%;
+ height: 183px;
+ background: url(../images/service-img.png);
+ background-position: center;
+ background-size: cover;
+ box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+}
+.service-card__title {
+ position: absolute;
+ top: 8px;
+ right: -4px;
+ padding: 4px 32px;
+ background: #000;
+ box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+ color: #fff;
+}
+.service-card__text-box {
+ margin-top: 24px;
+ text-align: justify;
+}
+.service-card__text-box > p {
+ font-size: 14px;
+}
+
+/* WORKSセクション
+====================================================*/
+.works > .full-container {
+ padding: 80px 30px 160px;
+}
+.works-content {
+ display: grid;
+ width: 100%;
+ grid-template-rows: 277px 277px;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-gap: 24px 15px;
+}
+.work-img {
+ width: 100%;
+ height: 100%;
+ box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+ object-fit: cover;
+}
+.work-img:nth-of-type(1) {
+ grid-row: 1 / 2;
+ grid-column: 1 / 3;
+}
+.work-img:nth-of-type(2) {
+ grid-row: 1 / 2;
+ grid-column: 3 / 4;
+}
+.work-img:nth-of-type(3) {
+ grid-row: 1 / 2;
+ grid-column: 4 / 5;
+}
+.work-img:nth-of-type(4) {
+ grid-row: 2 / 3;
+ grid-column: 1 / 2;
+}
+.work-img:nth-of-type(5) {
+ grid-row: 2 / 3;
+ grid-column: 2 / 3;
+}
+.work-img:nth-of-type(6) {
+ grid-row: 2 / 3;
+ grid-column: 3 / 5;
+}
+
+/* CONTACTセクション
+====================================================*/
+.contact > .full-container {
+ padding: 80px 0 160px;
+ background: #5e7a8f;
+}
+.contact .heading {
+ color: #fff;
+}
+.form {
+ margin: 0 auto;
+ padding: 56px 80px;
+ width: 980px;
+ height: auto;
+ border-radius: 10px;
+ background: #fff;
+}
+.form-table {
+ width: 100%;
+}
+.form-table__tr {
+ display: flex;
+ align-items: center;
+ padding: 32px 0;
+ border-top: 1px solid #ededed;
+}
+.form-table__tr:last-of-type {
+ padding-bottom: 0;
+}
+.form-table__th {
+ max-width: 250px;
+ width: 100%;
+ font-weight: normal;
+}
+.form-table__th > .required, .form-table__th > .any {
+ margin-right: 8px;
+ padding: 4px 8px;
+ border-radius: 4px;
+ color: #fff;
+ font-size: 12px;
+}
+.form-table__th > .required {
+ background: #db5b5b;
+}
+.form-table__th > .any {
+ background: #5bb4db;
+}
+.form-table__td {
+ max-width: calc(100% - 250px);
+ width: 100%;
+ font-weight: normal;
+}
+.form-table__input {
+ padding: 12px 16px;
+ width: 100%;
+ border: 1px solid #767676;
+ font-size: 14px;
+ resize: none;
+}
+.form-submit {
+ margin-top: 64px;
+ padding: 24px 0;
+ width: 100%;
+ border-radius: 10px;
+ background: #000;
+ color: #fff;
+ text-align: center;
+}
+
+/* フッター
+====================================================*/
+.footer {
+ height: 60px;
+ background: #000;
+ text-align: center;
+}
+.footer > p {
+ color: #fff;
+ font-size: 12px;
+ line-height: 60px;
+}
